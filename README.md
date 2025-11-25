@@ -1,6 +1,4 @@
-# Invotek CSS Sheet
-The stylesheet used for Invotek. The website is down so I had to use the version from the VotV archive.
-
-To install it, simply download this repo, then move styles.css and fonts to your website files. The readmy does not need to be copied.
-
-Crediting me is optional.
+# Invotek CSS Sheet (Portable)
+A portable version of the CSS code used for the VotV archive.
+To use it, paste this lone of code in your website
+    <link rel="stylesheet" href="styles.css">
