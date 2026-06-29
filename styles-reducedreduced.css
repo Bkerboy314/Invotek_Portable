@@ -1,0 +1,156 @@
+/* Reduced v1.3, 2025-05-29 */
+/* https://0x5fbe.id :: design inspiration */
+
+:root {
+    font-size: 13px;
+    line-height: 1.3;
+    font-family: "JetBrains Mono", monospace;
+    color-scheme: light dark;
+    --body: light-dark(#fff, #0f0f0f);
+    --text: light-dark(#000, #fff);
+    --signature: light-dark(#70e, #0f8);
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+    src: local("JetBrains Mono NL Regular"), url("/fonts/JetBrains/JetBrainsMonoNL-Regular-2.woff2");
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    font-display: swap;
+    font-weight: 800;
+    font-style: normal;
+    src: local("JetBrains Mono NL ExtraBold"), url("/fonts/JetBrains/JetBrainsMonoNL-ExtraBold-2.woff2");
+}
+
+body {
+    visibility: visible;
+    background-color: var(--body);
+}
+
+* {
+    color: light-dark(#222, #ddd);
+}
+
+*:focus-visible {
+    outline: 2px solid var(--signature);
+}
+
+body > div {
+    border: solid var(--text);
+    border-width: 2px 0;
+}
+
+main, header {
+    margin: 1em auto;
+    max-width: 811px;
+}
+
+h1 {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: bolder;
+    text-align: center;
+}
+
+h1, p {
+    margin: 0;
+}
+
+a {
+    color: var(--signature);
+}
+
+a:hover, a:focus {
+    color: var(--body);
+    background-color: var(--signature);
+}
+
+details[open] {
+    border-bottom: #777 solid 2px;
+    margin: 4px 0;
+    padding-bottom: 2px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+summary {
+    white-space: pre;
+}
+
+details[open] summary {
+    margin-bottom: 4px;
+}
+
+details:not([open]) summary:hover:not(:has(a:hover)) {
+    outline: 1px solid var(--signature);
+}
+
+details[open]:has(summary:hover), details[open]:has(summary:focus-visible) {
+    outline: 1px solid var(--signature);
+    border-bottom: none;
+    padding-bottom: 4px;
+}
+
+details[open]:has(summary:focus-visible) {
+    outline-width: 2px;
+    outline-offset: 2px;
+}
+
+details[open] summary:focus-visible {
+    outline: none;
+}
+
+details > div {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.hash {
+    color: light-dark(#555, #999);
+    user-select: all;
+}
+
+.hash:hover {
+    color: var(--text);
+    background-color: light-dark(#70e4, #0f84);
+}
+
+#sfvModalContainer {
+    border: 0;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+}
+
+#sfvModal {
+    background: var(--body);
+    border: 1px solid var(--signature);
+    margin: 5% auto;
+    padding: 20px;
+    width: 80vw;
+    max-width: 700px;
+    position: relative;
+    box-shadow: 0 0 10px #333;
+}
+
+#modalCloseButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#sfvContent {
+    white-space: pre-wrap;
+    word-break: break-word;
+    max-height: 70vh;
+    overflow-y: auto;
+    color: var(--text);
+}

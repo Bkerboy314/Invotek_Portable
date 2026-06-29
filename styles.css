@@ -3,66 +3,92 @@
 
 /*Fonts*/
 @font-face {
-    font-family: 'JetBrains Mono';
+    font-family: "JetBrains Mono";
     font-display: swap;
     font-weight: 300;
-    src: local('JetBrains Mono NL Light'), url('/fonts/JetBrains/JetBrainsMonoNL-Light-2.woff2');
+    src:
+        local("JetBrains Mono NL Light"),
+        url("https://bkerboy314.github.io/Invotek_Portable/fonts/JetBrains/JetBrainsMonoNL-Light-2.woff2");
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'JetBrains Mono';
+    font-family: "JetBrains Mono";
     font-display: swap;
     font-weight: 400;
-    src: local('JetBrains Mono NL Regular'), url('/fonts/JetBrains/JetBrainsMonoNL-Regular-2.woff2');
+    src:
+        local("JetBrains Mono NL Regular"),
+        url("https://bkerboy314.github.io/Invotek_Portable/fonts/JetBrains/JetBrainsMonoNL-Regular-2.woff2");
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'JetBrains Mono';
+    font-family: "JetBrains Mono";
     font-display: swap;
     font-weight: 400;
-    src: local('JetBrains Mono NL Italic'), url('/fonts/JetBrains/JetBrainsMonoNL-Italic-2.woff2');
+    src:
+        local("JetBrains Mono NL Italic"),
+        url("https://bkerboy314.github.io/Invotek_Portable/fonts/JetBrains/JetBrainsMonoNL-Italic-2.woff2");
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'JetBrains Mono';
+    font-family: "JetBrains Mono";
     font-display: swap;
     font-weight: 600;
-    src: local('JetBrains Mono NL SemiBold'), url('/fonts/JetBrains/JetBrainsMonoNL-SemiBold-2.woff2');
+    src:
+        local("JetBrains Mono NL SemiBold"),
+        url("https://bkerboy314.github.io/Invotek_Portable/fonts/JetBrains/JetBrainsMonoNL-SemiBold-2.woff2");
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'JetBrains Mono';
+    font-family: "JetBrains Mono";
     font-display: swap;
     font-weight: 800;
-    src: local('JetBrains Mono NL ExtraBold'), url('/fonts/JetBrains/JetBrainsMonoNL-ExtraBold-2.woff2');
+    src:
+        local("JetBrains Mono NL ExtraBold"),
+        url("https://bkerboy314.github.io/Invotek_Portable/fonts/JetBrains/JetBrainsMonoNL-ExtraBold-2.woff2");
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'NotoSerif';
+    font-family: "NotoSerif";
     font-display: swap;
-    font-weight: 400;
-    src: local('Noto Serif Regular'), url('/fonts/Noto Serif/NotoSerif-Regular.woff2');
+    font-weight: 200;
+    src:
+        local("Noto Serif Regular"),
+        url("https://bkerboy314.github.io/Invotek_Portable/fonts/Noto Serif/NotoSerif-Regular.woff2");
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'NotoSerif';
+    font-family: "ITCZapfChancery";
     font-display: swap;
-    font-weight: 400;
-    src: local('Noto Serif Italic'), url('/fonts/Noto Serif/NotoSerif-Italic.woff2');
-    font-style: italic;
+    font-weight: 200;
+    src:
+        local("ITC Zapf Chancery"),
+        url("https://bkerboy314.github.io/Invotek_Portable/fonts/ITCZapfChancery/ITCZapfChancery-Medium.woff2");
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'NotoSerif';
+    font-family: "ShareTechMono";
     font-display: swap;
-    font-weight: 700;
-    src: local('Noto Serif Bold'), url('/fonts/Noto Serif/NotoSerif-Bold.woff2');
+    font-weight: 100;
+    src:
+        local("Share Tech Mono"),
+        url("https://bkerboy314.github.io/Invotek_Portable/fonts/ShareTechMono.woff2");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "OldeEnglish";
+    font-display: swap;
+    font-weight: 200;
+    src:
+        local("OldeEnglish"),
+        url("https://bkerboy314.github.io/Invotek_Portable/fonts/OldeEnglish.woff2");
     font-style: normal;
 }
 
@@ -75,10 +101,9 @@ body {
     opacity: 1;
 }
 
-
 /*Text and whatchamacallit styling JetBrainsMono*/
 * {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: "JetBrains Mono", monospace;
     color: #181818;
     margin: 0;
     font-size: 0.95rem;
@@ -86,13 +111,13 @@ body {
 }
 
 b {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: "JetBrains Mono", monospace;
     font-weight: bolder;
     font-style: normal;
 }
 
 i {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: "JetBrains Mono", monospace;
     font-style: italic;
 }
 
@@ -104,24 +129,36 @@ u {
     display: inline-block;
 }
 
+.OldeEnglish {
+    font-family: "OldeEnglish", serif;
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+    color: #7f7f7f;
+}
+
+.ShareTechMono {
+    font-family: "ShareTechMono", serif;
+    font-size: 1.15rem;
+    letter-spacing: -0.5px;
+    color: #7f7f7f;
+}
+
+.ITCZapfChancery {
+    font-family: "ITCZapfChancery", serif;
+    font-size: 1.35rem;
+    letter-spacing: -0.5px;
+    color: #7f7f7f;
+}
+
 .noto-serif {
-  font-family: 'NotoSerif', serif;
-  font-size: 0.95rem;
-  letter-spacing: -0.5px;
-  color: #7f7f7f;
-}
-
-.noto-serif b {
-  font-weight: bolder; /* uses NotoSerif-Bold */
-  font-style: normal;
-}
-
-.noto-serif i {
-  font-style: italic; /* uses NotoSerif-Italic */
+    font-family: "NotoSerif", serif;
+    font-size: 1.15rem;
+    letter-spacing: -0.5px;
+    color: #7f7f7f;
 }
 
 u::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     bottom: 0;
@@ -133,7 +170,10 @@ u::after {
 }
 
 /*Purchase classifications and transparency stuff*/
-.purchase-red, .purchase-green, .purchase-yellow, .purchase-blue {
+.purchase-red,
+.purchase-green,
+.purchase-yellow,
+.purchase-blue {
     padding: 0.1rem 0.3rem;
     white-space: nowrap;
     color: black;
@@ -151,7 +191,7 @@ u::after {
 
 .purchase-yellow {
     border: 1px solid yellow;
-    background: linear-gradient(to top, #ffff00, #ffffd7)
+    background: linear-gradient(to top, #ffff00, #ffffd7);
 }
 
 .purchase-blue {
@@ -161,13 +201,13 @@ u::after {
 
 .transparency-title {
     font-size: 1.2rem;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: "JetBrains Mono", monospace;
     font-weight: 600;
 }
 
 .transparency-value {
     font-size: 1.5rem;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: "JetBrains Mono", monospace;
     font-weight: bolder;
     color: #7700e6;
 }
@@ -187,7 +227,7 @@ u::after {
 
 /*All hope of organisation lost beyond this point*/
 h1 {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: "JetBrains Mono", monospace;
     font-weight: bolder;
     margin: 1rem 0;
     display: flex;
@@ -196,7 +236,7 @@ h1 {
 }
 
 h1::after {
-    content: '';
+    content: "";
     flex-grow: 1;
     height: 4px;
     margin-left: 10px;
@@ -204,7 +244,7 @@ h1::after {
 }
 
 details.h2 summary {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: "JetBrains Mono", monospace;
     color: black;
     font-size: 1.1rem;
     font-weight: bolder;
@@ -217,12 +257,16 @@ details.h2 summary {
     font-weight: 600;
 }
 
-details.h2, details.h3 {
+details.h2,
+details.h3,
+details.h4 {
     position: relative;
 }
 
-details.h2::before, details.h3::before {
-    content: '';
+details.h2::before,
+details.h3::before,
+details.h4::before {
+    content: "";
     position: absolute;
     left: -20px;
     top: 0.6rem;
@@ -231,31 +275,36 @@ details.h2::before, details.h3::before {
     background: #7700e6;
 }
 
-details.h3 {
+details.h3,
+details.h4 {
     margin-left: 20px;
 }
 
-details.h3 summary {
-    font-family: 'JetBrains Mono', monospace;
+details.h3 summary,
+details.h4 summary {
+    font-family: "JetBrains Mono", monospace;
     color: black;
     font-size: 1.05rem;
     font-weight: 600;
 }
 
-.info-head, .info p, summary::after {
-    font-family: 'JetBrains Mono', monospace;
+.info-head,
+.info p,
+summary::after {
+    font-family: "JetBrains Mono", monospace;
     color: #595959;
     font-weight: light;
 }
 
 .directory {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: "JetBrains Mono", monospace;
     color: #cccccc;
     font-weight: light;
 }
 
-*::before, *::after {
-    font-family: 'JetBrains Mono', monospace;
+*::before,
+*::after {
+    font-family: "JetBrains Mono", monospace;
     color: #cccccc;
 }
 
@@ -263,63 +312,72 @@ details.h3 summary {
     font-size: 0.8em;
 }
 
-h1::before, details.h2 summary::before, details.h3 summary::before {
+h1::before,
+details.h2 summary::before,
+details.h3 summary::before,
+details.h4 summary::before {
     margin-right: 0.5rem;
 }
 
 h1::before {
     font-weight: bold;
-    content: '# ';
+    content: "# ";
 }
 
 details.h2 summary::before {
     font-weight: normal;
-    content: '## ';
+    content: "## ";
 }
 
 details.h3 summary::before {
     font-weight: normal;
-    content: '### ';
+    content: "### ";
 }
-
+details.h4 summary::before {
+    font-weight: normal;
+    content: "#### ";
+}
 
 .link-container {
     padding-left: 10px;
 }
 
-.link-container p, .link {
+.link-container p,
+.link {
     display: flex;
     align-items: center;
     margin: 0.3rem 0;
 }
 
-.link-container p::before, .link::before {
-    content: '=> ';
+.link-container p::before,
+.link::before {
+    content: "=> ";
     margin-right: 0.5rem;
 }
 
 .directory::before {
-    content: '$ ';
+    content: "$ ";
 }
 
 .info-head::before {
-    content: '> ';
+    content: "> ";
 }
 
-details.h2 summary, details.h3 summary {
+details.h2 summary,
+details.h3 summary {
     display: flex;
     align-items: center;
     padding: 0.6rem 0;
 }
 
 summary::after {
-    content: '(click to show)';
+    content: "(click to show)";
     margin-left: auto;
     flex-shrink: 0;
 }
 
-details[open] > summary::after { 
-    content: '(click to hide)'; 
+details[open] > summary::after {
+    content: "(click to hide)";
 }
 
 details[open] {
@@ -333,7 +391,8 @@ a {
     padding: 0.5em 0.4em;
 }
 
-summary:focus-visible, summary:hover {
+summary:focus-visible,
+summary:hover {
     outline: 3px solid #7700e6;
 }
 
@@ -341,7 +400,9 @@ summary:hover {
     outline-width: 1px;
 }
 
-a:focus, a:hover, ::selection {
+a:focus,
+a:hover,
+::selection {
     color: white;
     background-color: #7700e6;
 }
@@ -354,7 +415,8 @@ a:focus-visible {
     outline-offset: 2px;
 }
 
-a.img88x31, a.img88x31 img {
+a.img88x31,
+a.img88x31 img {
     padding: 0;
     display: inline-block;
 }
@@ -364,12 +426,16 @@ li {
     line-height: 1.4rem;
 }
 
-.info-highlight, .ul-info-highlight, .announcement-highlight {
+.info-highlight,
+.ul-info-highlight,
+.announcement-highlight {
     position: relative;
 }
 
-.info-highlight::before, .ul-info-highlight::before, .announcement-highlight::before {
-    content: '';
+.info-highlight::before,
+.ul-info-highlight::before,
+.announcement-highlight::before {
+    content: "";
     position: absolute;
     left: -20px;
     width: 4px;
@@ -392,7 +458,13 @@ li {
     background-size: 100% 200%;
 }
 
-.item-container, .warning-container, .info-container, .waiting-container, .success-container, .link2, .link3 {
+.item-container,
+.warning-container,
+.info-container,
+.waiting-container,
+.success-container,
+.link2,
+.link3 {
     display: flex;
     align-items: center;
 }
@@ -432,12 +504,17 @@ li {
 }
 
 .usp-container .title p {
-    font-family: 'JetBrains Mono';
+    font-family: "JetBrains Mono";
     font-weight: bolder;
     font-size: 1.2em;
 }
 
-.warning-container, .info-container, .waiting-container, .success-container, .link2, .link3 {
+.warning-container,
+.info-container,
+.waiting-container,
+.success-container,
+.link2,
+.link3 {
     margin: 0.5rem 0;
     border: 3px solid #ff0000;
     padding: 10px;
@@ -456,7 +533,8 @@ li {
     border-color: #008000;
 }
 
-.link2, .link3 {
+.link2,
+.link3 {
     border-color: #7700e6;
     background: linear-gradient(to top, #e4ccfa, #fbf7fe);
 }
@@ -469,31 +547,40 @@ li {
     width: fit-content;
 }
 
-.link2:hover:not(:focus), .link3:hover:not(:focus) {
+.link2:hover:not(:focus),
+.link3:hover:not(:focus) {
     background: linear-gradient(to top, #e4ccfa, #fbf7fe);
     color: #7700e6;
 }
 
-.link2:focus, .link3:focus {
+.link2:focus,
+.link3:focus {
     background: black;
 }
 
-.link2:focus-visible p, .link3:focus-visible p {
+.link2:focus-visible p,
+.link3:focus-visible p {
     font-family: "JetBrains Mono";
     font-weight: bolder;
 }
 
-.link2:focus p, .link2:focus b, .link3:focus p, .link3:focus b {
+.link2:focus p,
+.link2:focus b,
+.link3:focus p,
+.link3:focus b {
     color: white;
 }
 
-.link2 .img, .link3 .img {
+.link2 .img,
+.link2 .img-nocircle,
+.link3 .img {
     position: relative;
     display: inline-block;
     height: 24px;
 }
 
-.link2 .img {
+.link2 .img,
+.link2 .img-nocircle {
     margin-left: auto;
 }
 
@@ -501,7 +588,9 @@ li {
     margin-right: 10px;
 }
 
-.link2 img, .link3 img {
+.link2 img,
+.link2 .img-nocircle,
+.link3 img {
     margin-right: 0;
     position: relative;
 }
@@ -510,7 +599,8 @@ li {
     transform: rotate(180deg);
 }
 
-.link2 .img::before, .link3 .img::before {
+.link2 .img::before,
+.link3 .img::before {
     content: "";
     position: absolute;
     width: 24px;
@@ -528,12 +618,18 @@ li {
     height: 22px;
 }
 
-.link2 .img:hover::before, .link2 .img:focus::before, .link3 .img:hover::before, .link3 .img:focus::before {
+.link2 .img:hover::before,
+.link2 .img:focus::before,
+.link3 .img:hover::before,
+.link3 .img:focus::before {
     background-color: black;
     border-color: white;
 }
 
-.link2 .img:hover img, .link2 .img:focus img, .link3 .img:hover img, .link3 .img:focus img {
+.link2 .img:hover img,
+.link2 .img:focus img,
+.link3 .img:hover img,
+.link3 .img:focus img {
     filter: invert(100%);
 }
 
@@ -541,7 +637,11 @@ li {
     padding-right: 5px;
 }
 
-.info p, .link-container p, .link-container a, .link3 p, .small-text {
+.info p,
+.link-container p,
+.link-container a,
+.link3 p,
+.small-text {
     font-size: 0.85rem;
 }
 
@@ -566,14 +666,27 @@ li {
     }
 }
 
-.warning-container img, .info-container img, .waiting-container img, .success-container img {
+.warning-container img,
+.info-container img,
+.waiting-container img,
+.success-container img {
     margin-right: 10px;
 }
 
-.icon, .icon-r, .icon2, .icon-nodarktheme {
+.icon,
+.icon-r,
+.icon2,
+.icon-notheme {
     margin-right: 1em;
     width: 24px;
     height: 24px;
+}
+
+.icon-nothemebig {
+    margin-top: -0.75em;
+    margin-right: 1em;
+    width: 48px;
+    height: 48px;
 }
 
 .icon-r {
@@ -591,7 +704,8 @@ li {
     border-left: 4px solid #bbb;
 }
 
-pre, code {
+pre,
+code {
     background: #313131;
     color: white;
     border-radius: 5px;
@@ -614,7 +728,7 @@ pre {
     color: red;
     font-family: "JetBrains Mono";
     font-weight: bolder;
-    content: ' *';
+    content: " *";
     font-size: 1em;
 }
 
@@ -633,7 +747,8 @@ input {
     margin: 0.1rem 0;
 }
 
-input:hover, textarea:hover {
+input:hover,
+textarea:hover {
     border: solid 1px #7700e6;
     background-color: #141414;
     color: white;
@@ -645,7 +760,8 @@ input[type="number"] {
     display: inline;
 }
 
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
     margin: 0;
     padding: 0;
     width: auto;
@@ -666,17 +782,21 @@ p span {
     color: black;
 }
 
-.price-bold, .price-bold::before, label, fieldset legend {
+.price-bold,
+.price-bold::before,
+label,
+fieldset legend {
     font-family: "JetBrains Mono";
     font-weight: bolder;
     color: black;
 }
 
 .price-bold::before {
-    content: '£';
+    content: "£";
 }
 
-fieldset label, .regular {
+fieldset label,
+.regular {
     font-family: "JetBrains Mono";
     font-weight: normal;
 }
@@ -692,7 +812,8 @@ button:hover {
     color: white;
 }
 
-.no-display, .charity {
+.no-display,
+.charity {
     display: none;
 }
 
@@ -715,37 +836,101 @@ button:hover {
     }
 }
 
+/*Scroll Function*/
+.container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.scroll {
+    white-space: nowrap;
+    margin: 0 2em;
+}
+
+.scroll div {
+    display: flex;
+    gap: 2em;
+}
+
+.scroll p {
+    font-size: 5em;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: 10px;
+}
+
+.RightToLeft {
+    animation: RightToLeft 10s infinite linear;
+}
+
+@keyframes RightToLeft {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.LeftToRight {
+    animation: LeftToRight 10s infinite linear;
+}
+
+@keyframes LeftToRight {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
 /*Dark mode colours (also disorganised)*/
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #0f0f0f;
     }
 
-    *, .transparency-value span {
+    *,
+    .transparency-value span {
         color: #e3e3e3;
     }
 
-    h1, details.h2 summary, details.h3 summary, b {
+    h1,
+    details.h2 summary,
+    details.h3 summary,
+    b {
         color: white;
     }
 
-    *::before, *::after, .directory {
+    *::before,
+    *::after,
+    .directory {
         color: #707070;
     }
 
-    .info-head, .info p, summary::after {
+    .info-head,
+    .info p,
+    summary::after {
         color: #a1a1a1;
     }
 
-    a:not(.fancy), .transparency-value {
+    a:not(.fancy),
+    .transparency-value {
         color: #00ff88;
     }
 
-    summary:focus-visible, summary:hover {
+    summary:focus-visible,
+    summary:hover {
         outline-color: #00ff88;
     }
 
-    a:focus, a:hover, ::selection {
+    a:focus,
+    a:hover,
+    ::selection {
         color: black;
         background-color: #00ff88;
     }
@@ -754,30 +939,43 @@ button:hover {
         outline-color: white;
     }
 
-    input, textarea {
+    input,
+    textarea {
         border-color: #ccc;
         background-color: #222;
     }
-    
-    input:hover, textarea:hover {
+
+    input:hover,
+    textarea:hover {
         border: solid 1px #00ff88;
         background-color: white;
         color: black;
     }
-    
+
     ::placeholder {
         color: #888;
     }
-    
-    p span, .price-bold, .price-bold::before, label, fieldset legend, .usp-container .title p, .transparency-title, .testimonial, .purchase-red, .purchase-green, .purchase-yellow, .purchase-blue {
+
+    p span,
+    .price-bold,
+    .price-bold::before,
+    label,
+    fieldset legend,
+    .usp-container .title p,
+    .transparency-title,
+    .testimonial,
+    .purchase-red,
+    .purchase-green,
+    .purchase-yellow,
+    .purchase-blue {
         color: white;
     }
-    
+
     button {
         border-color: #00ff88;
         background-color: #222;
     }
-    
+
     button:hover {
         background-color: white;
         color: black;
@@ -787,7 +985,8 @@ button:hover {
         background: linear-gradient(to right, white, #0f0f0f);
     }
 
-    .info-highlight::before, .ul-info-highlight::before {
+    .info-highlight::before,
+    .ul-info-highlight::before {
         background: linear-gradient(to bottom, #00ff88, #006335, #00ff88);
         background-size: 100% 200%;
     }
@@ -797,11 +996,15 @@ button:hover {
         background-size: 200% 100%;
     }
 
-    details.h2::before, details.h3::before {
+    details.h2::before,
+    details.h3::before {
         background: #00ff88;
     }
 
-    .icon, .icon-r, .icon3, .icon4 {
+    .icon,
+    .icon-r,
+    .icon3,
+    .icon4 {
         filter: invert(100%);
     }
 
@@ -809,36 +1012,49 @@ button:hover {
         border-right-color: #777;
     }
 
-    .link2, .link3 {
+    .link2,
+    .link3 {
         border-color: #00ff88;
         background: linear-gradient(to top, #00ff8833, #00ff8811);
     }
 
-    .link2:hover:not(:focus), .link3:hover:not(:focus) {
+    .link2:hover:not(:focus),
+    .link3:hover:not(:focus) {
         color: #00ff88;
         background: linear-gradient(to top, #00ff8833, #00ff8811);
     }
 
-    .link2:focus, .link3:focus {
+    .link2:focus,
+    .link3:focus {
         background: white;
         color: black;
     }
 
-    .link2:focus p, .link2:focus b, .link3:focus p, .link3:focus b {
+    .link2:focus p,
+    .link2:focus b,
+    .link3:focus p,
+    .link3:focus b {
         color: black;
     }
 
-    .link2 .img::before, .link3 .img::before {
+    .link2 .img::before,
+    .link3 .img::before {
         background-color: black;
         border: 1px solid white;
     }
 
-    .link2 .img:hover::before, .link2 .img:focus::before, .link3 .img:hover::before, .link3 .img:focus::before {
+    .link2 .img:hover::before,
+    .link2 .img:focus::before,
+    .link3 .img:hover::before,
+    .link3 .img:focus::before {
         background-color: white;
         border-color: black;
     }
 
-    .link2 .img:hover img, .link2 .img:focus img, .link3 .img:hover img, .link3 .img:focus img {
+    .link2 .img:hover img,
+    .link2 .img:focus img,
+    .link3 .img:hover img,
+    .link3 .img:focus img {
         filter: none;
     }
 
@@ -853,28 +1069,44 @@ button:hover {
     body {
         outline-color: rgba(255, 255, 255, 0.5);
     }
-    
+
     .purchase-red {
-        background: linear-gradient(to top, rgba(255, 186, 186, 0.4), rgba(255, 243, 243, 0.1));
+        background: linear-gradient(
+            to top,
+            rgba(255, 186, 186, 0.4),
+            rgba(255, 243, 243, 0.1)
+        );
     }
-    
+
     .purchase-green {
-        background: linear-gradient(to top, rgba(133, 255, 133, 0.4), rgba(245, 255, 245, 0.1));
+        background: linear-gradient(
+            to top,
+            rgba(133, 255, 133, 0.4),
+            rgba(245, 255, 245, 0.1)
+        );
     }
-    
+
     .purchase-yellow {
-        background: linear-gradient(to top, rgba(255, 255, 0.4), rgba(255, 255, 215, 0.1))
+        background: linear-gradient(
+            to top,
+            rgba(255, 255, 0.4),
+            rgba(255, 255, 215, 0.1)
+        );
     }
-    
+
     .purchase-blue {
-        background: linear-gradient(to top, rgba(202, 202, 255, 0.4), rgba(248, 248, 255, 0.1));
+        background: linear-gradient(
+            to top,
+            rgba(202, 202, 255, 0.4),
+            rgba(248, 248, 255, 0.1)
+        );
     }
 
     .transparency-value .g {
         color: #00ff00;
     }
-    
+
     .transparency-value .r {
-        color: #FF7070;
+        color: #ff7070;
     }
 }
