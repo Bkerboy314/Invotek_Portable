@@ -55,10 +55,30 @@
 @font-face {
     font-family: "NotoSerif";
     font-display: swap;
-    font-weight: 200;
+    font-weight: 400;
     src:
         local("Noto Serif Regular"),
         url("https://bkerboy314.github.io/Invotek_Portable/fonts/Noto Serif/NotoSerif-Regular.woff2");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NotoSerif";
+    font-display: swap;
+    font-weight: 400;
+    src:
+        local("Noto Serif Italic"),
+        url("https://bkerboy314.github.io/Invotek_Portable/fonts/Noto Serif/NotoSerif-Italic.woff2");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NotoSerif";
+    font-display: swap;
+    font-weight: 700;
+    src:
+        local("Noto Serif Bold"),
+        url("https://bkerboy314.github.io/Invotek_Portable/fonts/Noto Serif/NotoSerif-Bold.woff2");
     font-style: normal;
 }
 
@@ -127,6 +147,22 @@ u {
     padding-bottom: 4px;
     margin-bottom: 5px;
     display: inline-block;
+}
+
+.noto-serif {
+    font-family: "NotoSerif", serif;
+    font-size: 0.95rem;
+    letter-spacing: -0.5px;
+    color: #7f7f7f;
+}
+
+.noto-serif b {
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.noto-serif i {
+    font-style: italic;
 }
 
 .OldeEnglish {
